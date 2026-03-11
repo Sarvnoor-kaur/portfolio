@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvnoor Kaur - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Devicons for colorful tech icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Typed.js for typing animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home">SK</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#coding-profiles" class="nav-link">Coding Profiles</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Sarvnoor Kaur</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span id="typed-text"></span>
+                    </h2>
+                    <p class="hero-description">
+                        Hi, I'm Sarvnoor Kaur, a Computer Science student passionate about web development, 
+                        problem solving, and building scalable applications using the MERN stack.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://github.com/Sarvnoor-kaur" target="_blank" class="social-icon-hero" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/sarvnoor-kaur-1aa4ab283" target="_blank" class="social-icon-hero" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://leetcode.com/u/noor_19_idk/" target="_blank" class="social-icon-hero" title="LeetCode">
+                            <i class="fas fa-code"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline" download>
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="profile.jpeg" alt="Sarvnoor Kaur" class="profile-img">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-header" data-aos="fade-up">
+                <h2 class="section-title gradient-title">About Me</h2>
+                <p class="about-subtitle">Get to know more about my journey, passion for technology, and development experience.</p>
+            </div>
+            
+            <div class="about-content-wrapper">
+                <div class="about-text-section" data-aos="fade-up" data-aos-delay="100">
+                    <p class="about-text-main">
+                        I am <span class="highlight-text">Sarvnoor Kaur</span>, a B.Tech Computer Science student at 
+                        <span class="highlight-text">Lovely Professional University</span> with a strong passion for 
+                        full stack web development and problem solving.
+                    </p>
+                    <p class="about-text-main">
+                        I specialize in building scalable web applications using the 
+                        <span class="highlight-text">MERN stack</span> (MongoDB, Express, React, Node.js). 
+                        I enjoy transforming ideas into real-world applications and continuously improving my technical skills.
+                    </p>
+                    <p class="about-text-main">
+                        I have solved <span class="highlight-text">800+ Data Structures and Algorithms</span> problems 
+                        across coding platforms like LeetCode and GeeksforGeeks, strengthening my analytical thinking 
+                        and coding abilities.
+                    </p>
+                </div>
+
+                <div class="about-stats-grid">
+                    <div class="about-stat-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="stat-icon">
+                            <i class="fas fa-code" style="color: #38bdf8;"></i>
+                        </div>
+                        <div class="stat-number">800+</div>
+                        <div class="stat-label">DSA Problems Solved</div>
+                    </div>
+                    <div class="about-stat-card" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram" style="color: #10b981;"></i>
+                        </div>
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Major Projects</div>
+                    </div>
+                    <div class="about-stat-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="stat-icon">
+                            <i class="fas fa-briefcase" style="color: #f59e0b;"></i>
+                        </div>
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Internship Experience</div>
+                    </div>
+                    <div class="about-stat-card" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap" style="color: #8b5cf6;"></i>
+                        </div>
+                        <div class="stat-number">2027</div>
+                        <div class="stat-label">Graduation Year</div>
+                    </div>
+                </div>
+
+                <div class="about-tech-section" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="tech-section-title">Technology Highlights</h3>
+                    <div class="tech-badges-grid">
+                        <div class="tech-badge-item">
+                            <i class="devicon-react-original colored"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-badge-item">
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-badge-item">
+                            <i class="devicon-mongodb-plain colored"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="tech-badge-item">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-badge-item">
+                            <i class="devicon-cplusplus-plain colored"></i>
+                            <span>C++</span>
+                        </div>
+                        <div class="tech-badge-item">
+                            <i class="devicon-python-plain colored"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-badge-item">
+                            <i class="devicon-java-plain colored"></i>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title gradient-title">Skills & Technologies</h2>
+            <div class="skills-grid-modern">
+                <!-- Frontend Card -->
+                <div class="skill-card-modern" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card-header">
+                        <i class="fas fa-palette"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-icons-grid">
+                        <div class="skill-icon-item">
+                            <i class="devicon-html5-plain colored"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-css3-plain colored"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-react-original colored"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-redux-original colored"></i>
+                            <span>Redux</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-tailwindcss-plain colored"></i>
+                            <span>Tailwind</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-bootstrap-plain colored"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-nextjs-original colored"></i>
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Card -->
+                <div class="skill-card-modern" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-icons-grid">
+                        <div class="skill-icon-item">
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-express-original colored"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-mongodb-plain colored"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-php-plain colored"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="fas fa-plug" style="color: #38bdf8;"></i>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages Card -->
+                <div class="skill-card-modern" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-icons-grid">
+                        <div class="skill-icon-item">
+                            <i class="devicon-cplusplus-plain colored"></i>
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-java-plain colored"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-python-plain colored"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Card -->
+                <div class="skill-card-modern" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-card-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-icons-grid">
+                        <div class="skill-icon-item">
+                            <i class="devicon-git-plain colored"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-github-original colored"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-postman-plain colored"></i>
+                            <span>Postman</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-docker-plain colored"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-vscode-plain colored"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="devicon-figma-plain colored"></i>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title gradient-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-header">
+                        <i class="fas fa-cloud-sun project-icon"></i>
+                        <h3 class="project-title">Farm Advisory & Weather Forecast System</h3>
+                    </div>
+                    <p class="project-description">
+                        A comprehensive platform providing real-time weather updates and crop recommendations 
+                        for farmers with responsive design for rural accessibility.
+                    </p>
+                    <div class="project-features">
+                        <span><i class="fas fa-check"></i> Real-time weather updates</span>
+                        <span><i class="fas fa-check"></i> Crop recommendation system</span>
+                        <span><i class="fas fa-check"></i> API integration</span>
+                        <span><i class="fas fa-check"></i> Responsive design</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">PHP</span>
+                        <span class="tech-badge">XAMPP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small btn-primary">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" class="btn btn-small btn-outline">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-header">
+                        <i class="fas fa-robot project-icon"></i>
+                        <h3 class="project-title">AI Telemedicine Bot</h3>
+                    </div>
+                    <p class="project-description">
+                        An intelligent healthcare assistant chatbot providing AI-powered health guidance 
+                        with voice interaction capabilities for accessible healthcare.
+                    </p>
+                    <div class="project-features">
+                        <span><i class="fas fa-check"></i> AI health guidance chatbot</span>
+                        <span><i class="fas fa-check"></i> Voice interaction</span>
+                        <span><i class="fas fa-check"></i> AI-powered responses</span>
+                        <span><i class="fas fa-check"></i> Accessible healthcare</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">AI APIs</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small btn-primary">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" class="btn btn-small btn-outline">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-header">
+                        <i class="fas fa-graduation-cap project-icon"></i>
+                        <h3 class="project-title">ERP Based Student Management System</h3>
+                    </div>
+                    <p class="project-description">
+                        A full-stack MERN application for managing student records, attendance tracking, 
+                        and analytics with RESTful API integration.
+                    </p>
+                    <div class="project-features">
+                        <span><i class="fas fa-check"></i> Student records management</span>
+                        <span><i class="fas fa-check"></i> Attendance tracking</span>
+                        <span><i class="fas fa-check"></i> REST API integration</span>
+                        <span><i class="fas fa-check"></i> Dashboard with analytics</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">React.js</span>
+                        <span class="tech-badge">Node.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small btn-primary">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" class="btn btn-small btn-outline">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-content">
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="experience-details">
+                        <h3 class="experience-title">Full Stack Developer Intern</h3>
+                        <h4 class="experience-company">Techpile Technology Pvt. Ltd., Lucknow</h4>
+                        <div class="experience-responsibilities">
+                            <ul>
+                                <li><i class="fas fa-chevron-right"></i> Developed and maintained MERN stack applications</li>
+                                <li><i class="fas fa-chevron-right"></i> Built RESTful APIs</li>
+                                <li><i class="fas fa-chevron-right"></i> Optimized database queries</li>
+                                <li><i class="fas fa-chevron-right"></i> Collaborated using GitHub for version control and code reviews</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="achievement-title">800+ DSA Problems</h3>
+                    <p class="achievement-description">
+                        Solved over 800 Data Structures and Algorithms problems across multiple platforms
+                    </p>
+                    <div class="achievement-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="achievement-title">LeetCode: 550+</h3>
+                    <p class="achievement-description">
+                        Successfully solved 550+ problems on LeetCode platform
+                    </p>
+                    <div class="achievement-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="achievement-title">GeeksforGeeks: 250+</h3>
+                    <p class="achievement-description">
+                        Completed 250+ coding challenges on GeeksforGeeks
+                    </p>
+                    <div class="achievement-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="achievement-title">Hackathons & Events</h3>
+                    <p class="achievement-description">
+                        Participated in hackathons and coding events
+                    </p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="achievement-title">Technical Recognition</h3>
+                    <p class="achievement-description">
+                        Recognized for technical project presentations
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="cert-title">MERN Stack Development</h3>
+                    <p class="cert-issuer">Techpile Technology Pvt. Ltd.</p>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="cert-title">Cloud Computing</h3>
+                    <p class="cert-issuer">NPTEL</p>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3 class="cert-title">Mastering Java with GUI Development</h3>
+                    <p class="cert-issuer">Lovely Professional University</p>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="cert-title">Data Structures and Algorithms</h3>
+                    <p class="cert-issuer">CSE Pathshala</p>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="cert-title">Programming Certifications</h3>
+                    <p class="cert-issuer">C, C++, and Java</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title gradient-title">Education</h2>
+            <div class="education-timeline">
+                <!-- Timeline Item 1 - B.Tech (Most Recent) -->
+                <div class="timeline-item-modern" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-node">
+                        <div class="node-dot"></div>
+                        <div class="node-pulse"></div>
+                    </div>
+                    <div class="timeline-card timeline-left">
+                        <div class="timeline-card-header">
+                            <div class="timeline-icon">
+                                <i class="fas fa-university" style="color: #8b5cf6;"></i>
+                            </div>
+                            <div class="timeline-badge current">Current</div>
+                        </div>
+                        <h3 class="timeline-card-title">B.Tech Computer Science Engineering</h3>
+                        <h4 class="timeline-card-institution">Lovely Professional University</h4>
+                        <div class="timeline-card-meta">
+                            <span class="timeline-duration">
+                                <i class="far fa-calendar"></i> Aug 2023 – Present
+                            </span>
+                            <span class="timeline-grade">
+                                <i class="fas fa-star"></i> CGPA: 8.5
+                            </span>
+                        </div>
+                        <p class="timeline-card-description">
+                            Currently pursuing B.Tech in Computer Science Engineering with a strong focus on 
+                            software development, data structures, and full stack web technologies.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-pill">Software Development</span>
+                            <span class="skill-pill">Data Structures</span>
+                            <span class="skill-pill">Full Stack</span>
+                            <span class="skill-pill">Web Technologies</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 - Class 12 -->
+                <div class="timeline-item-modern" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-node">
+                        <div class="node-dot"></div>
+                        <div class="node-pulse"></div>
+                    </div>
+                    <div class="timeline-card timeline-right">
+                        <div class="timeline-card-header">
+                            <div class="timeline-icon">
+                                <i class="fas fa-graduation-cap" style="color: #f59e0b;"></i>
+                            </div>
+                            <div class="timeline-badge">Class 12</div>
+                        </div>
+                        <h3 class="timeline-card-title">Senior Secondary (Class 12)</h3>
+                        <h4 class="timeline-card-institution">St Paul's Inter College, Shahjahanpur</h4>
+                        <div class="timeline-card-meta">
+                            <span class="timeline-duration">
+                                <i class="far fa-calendar"></i> Apr 2021 – Mar 2023
+                            </span>
+                            <span class="timeline-grade">
+                                <i class="fas fa-award"></i> Grade: 87%
+                            </span>
+                        </div>
+                        <p class="timeline-card-description">
+                            Completed senior secondary education with 87%, while actively participating in academic 
+                            and co-curricular competitions. Earned several certificates, trophies, and medals 
+                            reflecting dedication and curiosity.
+                        </p>
+                        <div class="timeline-achievements-list">
+                            <span class="achievement-badge"><i class="fas fa-certificate"></i> Certificates</span>
+                            <span class="achievement-badge"><i class="fas fa-trophy"></i> Trophies</span>
+                            <span class="achievement-badge"><i class="fas fa-medal"></i> Medals</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 - Class 10 -->
+                <div class="timeline-item-modern" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-node">
+                        <div class="node-dot"></div>
+                        <div class="node-pulse"></div>
+                    </div>
+                    <div class="timeline-card timeline-left">
+                        <div class="timeline-card-header">
+                            <div class="timeline-icon">
+                                <i class="fas fa-school" style="color: #10b981;"></i>
+                            </div>
+                            <div class="timeline-badge">Class 10</div>
+                        </div>
+                        <h3 class="timeline-card-title">High School (Class 10)</h3>
+                        <h4 class="timeline-card-institution">St Paul's Inter College, Shahjahanpur</h4>
+                        <div class="timeline-card-meta">
+                            <span class="timeline-duration">
+                                <i class="far fa-calendar"></i> Apr 2020 – Mar 2021
+                            </span>
+                            <span class="timeline-grade">
+                                <i class="fas fa-award"></i> Grade: 93%
+                            </span>
+                        </div>
+                        <p class="timeline-card-description">
+                            Achieved 93% in the CBSE Board Examination, demonstrating strong academic consistency 
+                            and dedication throughout the year. Recognized for outstanding academic performance and 
+                            active participation in school activities.
+                        </p>
+                        <div class="timeline-achievement">
+                            <img src="https://via.placeholder.com/80x60/1e293b/38bdf8?text=Toppers" alt="St Paul's Toppers" class="achievement-thumbnail">
+                            <span class="achievement-label">St Paul's Toppers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coding Profiles Section -->
+    <section id="coding-profiles" class="coding-profiles">
+        <div class="container">
+            <h2 class="section-title">Coding Profiles</h2>
+            <div class="profiles-grid">
+                <a href="https://github.com/sarnoor-kaur" target="_blank" class="profile-card">
+                    <i class="fab fa-github profile-icon"></i>
+                    <h3 class="profile-name">GitHub</h3>
+                    <p class="profile-handle">@sarnoor-kaur</p>
+                </a>
+                <a href="https://leetcode.com" target="_blank" class="profile-card">
+                    <i class="fas fa-code profile-icon"></i>
+                    <h3 class="profile-name">LeetCode</h3>
+                    <p class="profile-handle">550+ Problems</p>
+                </a>
+                <a href="#" target="_blank" class="profile-card">
+                    <i class="fas fa-laptop-code profile-icon"></i>
+                    <h3 class="profile-name">GeeksforGeeks</h3>
+                    <p class="profile-handle">250+ Problems</p>
+                </a>
+                <a href="https://linkedin.com/in/sarvnoor-kaur-1aa4ab283" target="_blank" class="profile-card">
+                    <i class="fab fa-linkedin profile-icon"></i>
+                    <h3 class="profile-name">LinkedIn</h3>
+                    <p class="profile-handle">Connect with me</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Let's Connect</h3>
+                    <p class="contact-text">
+                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:sarvnoor19@gmail.com">sarvnoor19@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:9807743666">9807743666</a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/sarnoor-kaur" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/sarvnoor-kaur-1aa4ab283" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://leetcode.com" target="_blank" class="social-icon">
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sarvnoor Kaur. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
