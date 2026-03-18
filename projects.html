@@ -607,12 +607,7 @@
                 <p class="hero-subtitle">A showcase of my work spanning web applications, APIs, and responsive interfaces.</p>
                 
                 <!-- Note about project images -->
-                <div style="background: rgba(56, 189, 248, 0.1); padding: 1rem 2rem; border-radius: 12px; margin: 2rem auto; max-width: 600px; border-left: 4px solid #38bdf8;">
-                    <p style="color: #94a3b8; font-size: 0.9rem; margin: 0;">
-                        <i class="fas fa-info-circle" style="color: #38bdf8; margin-right: 0.5rem;"></i>
-                        To add project screenshots: Replace the placeholder divs with actual images from your deployed projects
-                    </p>
-                </div>
+                
                 
                 <div class="filter-buttons">
                     <button class="filter-btn active" data-filter="all">All Projects</button>
@@ -770,37 +765,40 @@
                         </div>
                     </div>
 
-                    <!-- Project 4 - Farm Advisory System -->
+                    <!-- Project 4 - collabsphere System -->
                     <div class="project-card" data-category="webapp fullstack">
-                        <div class="project-image">
-                            <div class="project-placeholder">
-                                <i class="fas fa-cloud-sun project-icon"></i>
-                            </div>
-                            <div class="project-badges">
-                                <span class="badge badge-webapp">Web App</span>
-                            </div>
+                    <div class="project-image">
+                        <img src="collab.png" alt="CollabSphere Chat App" class="project-screenshot">
+                        <div class="project-badges">
+                            <span class="badge badge-webapp">Web App</span>
+                            <span class="badge badge-fullstack">Full Stack</span>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Farm Advisory & Weather Forecast System</h3>
-                            <p class="project-description">
-                                A comprehensive platform providing real-time weather updates and intelligent crop recommendations for farmers with rural-friendly responsive design.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">Tailwind CSS</span>
-                                <span class="tech-tag">PHP</span>
-                            </div>
-                            <div class="project-actions">
-                                <a href="#" class="btn btn-primary">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    Live Demo
-                                </a>
-                                <button onclick="openProjectModal('project4')" class="btn btn-outline">
-                                    <i class="fas fa-info-circle"></i>
-                                    Details
-                                </button>
-                            </div>
-                        </div>
+                    </div>
+    <div class="project-content">
+        <h3 class="project-title">CollabSphere</h3>
+        <p class="project-description">
+            A full-stack real-time chat application enabling seamless one-to-one and group messaging. Built with Socket.io for instant communication, it features live typing indicators, online/offline presence tracking, and secure JWT-based authentication.
+        </p>
+        <div class="tech-stack">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Socket.io</span>
+            <span class="tech-tag">JWT</span>
+            <span class="tech-tag">Tailwind CSS</span>
+        </div>
+        <div class="project-actions">
+            <a href="https://collab-nu-three.vercel.app/" target="_blank" class="btn btn-primary">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+            </a>
+            <button onclick="openProjectModal('project4')" class="btn btn-outline">
+                <i class="fas fa-info-circle"></i>
+                Details
+            </button>
+        </div>
+    </div>
                     </div>
 
                     <!-- Project 5 - AI Telemedicine Bot -->
@@ -977,19 +975,31 @@
                 githubUrl: 'https://github.com/Sarvnoor-kaur/shophub'
             },
             project4: {
-                title: 'Farm Advisory & Weather Forecast System',
-                description: 'A comprehensive platform providing real-time weather updates and crop recommendations for farmers. Features responsive design optimized for rural accessibility, API integration for weather data, and intelligent crop advisory system to help farmers make informed decisions.',
+               title: 'CollabSphere',
+                description: 'A full-stack real-time chat application that enables seamless communication through one-to-one and group messaging. The platform integrates REST APIs with Socket.io for instant message delivery, typing indicators, and live online/offline presence tracking. It features secure JWT-based authentication, scalable architecture, and an intuitive user interface for smooth user experience.',
                 features: [
-                    'Real-time Weather Updates - Current weather conditions',
-                    'Crop Recommendations - AI-powered crop suggestions',
-                    'API Integration - Weather data from reliable sources',
-                    'Rural-friendly Design - Optimized for low bandwidth',
-                    'Multi-language Support - Accessible to diverse users',
-                    'Forecast Analysis - 7-day weather predictions'
+                    'Real-time Messaging - Instant send/receive using Socket.io',
+                    'User Authentication - Secure login & registration with JWT',
+                    'User Discovery - Search users and view online/offline status',
+                    'Typing Indicators - Live typing feedback during chats',
+                    'Group & One-to-One Chat - Flexible communication system',
+                    'Conversation Management - Persistent chat history with MongoDB',
+                    'Read Receipts - Track message status',
+                    'Responsive UI - Optimized for all screen sizes'
                 ],
-                techStack: ['HTML5', 'Tailwind CSS', 'JavaScript', 'PHP', 'XAMPP', 'Weather API'],
-                liveUrl: '#',
-                githubUrl: '#'
+                techStack: [
+                    'React.js',
+                    'Node.js',
+                    'Express.js',
+                    'MongoDB',
+                    'Socket.io',
+                    'JWT Authentication',
+                    'bcrypt.js',
+                    'Tailwind CSS',
+                    'Axios'
+                ],
+                liveUrl: 'https://collab-nu-three.vercel.app/',
+                githubUrl: 'https://github.com/Sarvnoor-kaur/Collab'
             },
             project5: {
                 title: 'AI Telemedicine Bot',
