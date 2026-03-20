@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Serve static files
-app.use(express.static('.'));
+app.use(express.static(path.join(__dirname)));
 
 // Serve main pages
 app.get('/', (req, res) => {
