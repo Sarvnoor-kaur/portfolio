@@ -12,8 +12,15 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files
-app.use(express.static(path.join(__dirname)));
+// Set proper MIME types for static files
+app.type('css', 'text/css; charset=utf-8');
+app.type('js', 'application/javascript; charset=utf-8');
+
+// Serve static files with specific handling for different file types
+app.use(express.static(path.join(__dirname), {
+    maxAge: '1h',
+    etag: false
+}));
 
 // Serve main pages
 app.get('/', (req, res) => {
@@ -143,6 +150,16 @@ app.post('/send-email', async (req, res) => {
 // Health check endpoint
 app.get('/health', (req, res) => {
     res.json({ status: 'Server is running!' });
+});
+
+// Catch-all to serve index.html for all unmatched routes
+// This ensures that client-side routing works properly
+app.use((req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'), (err) => {
+        if (err) {
+            res.status(500).send('Error loading page');
+        }
+    });
 });
 
 // Start server
