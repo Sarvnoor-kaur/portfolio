@@ -47,17 +47,22 @@ To configure where you receive emails:
 
 ```
 portfolio/
-├── index.html          # Main portfolio page
-├── projects.html       # Projects showcase page
-├── styles.css          # All styling
-├── script.js           # Frontend JavaScript with Web3Forms integration
-├── projects.js         # Projects page JavaScript
-├── README.md          # This file
-└── assets/            # Images and certificates
-    ├── javagui.png
-    ├── cloudcomputing.png
-    ├── hackathon.png
-    └── profile.jpeg
+├── index.html               # Main portfolio page
+├── projects.html            # Projects showcase page
+├── css/
+│   ├── styles.css           # Main styles
+│   └── styles-compact.css   # Alternate compact styles
+├── js/
+│   ├── script.js            # Main frontend JavaScript
+│   └── projects.js          # Projects page JavaScript
+├── assets/
+│   ├── docs/
+│   │   ├── resumenoor.pdf
+│   │   └── certificatehackathon.pdf
+│   └── images/              # All images and certificates
+├── README.md                # This file
+├── TODO.md
+└── REDESIGN-TODO.md
 ```
 
 ## 🛠️ Technologies Used
